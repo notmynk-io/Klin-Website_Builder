@@ -1,0 +1,6 @@
+{
+  "name": "Vvveb Visual Web Builder",
+  "description": "A powerful drag-and-drop visual web page builder inspired by Vvvebjs, with live canvas editing, component library, property inspector, tree view layers, responsive viewports, live HTML code editor, multi-page management, and AI component generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
