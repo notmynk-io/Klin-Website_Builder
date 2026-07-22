@@ -8,26 +8,7 @@ import { generateId } from '../utils/domUtils';
  */
 
 // 1. SINGLE GLOBAL LOGO IMAGE SOURCE (SVG Data URI)
-export const GLOBAL_LOGO_SRC = `data:image/svg+xml;utf8,${encodeURIComponent(`
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 54" fill="none">
-  <!-- Dotted yellow border frame -->
-  <rect x="3" y="3" width="48" height="48" rx="10" fill="#14161C" stroke="#E8A23D" stroke-width="2" stroke-dasharray="4 3"/>
-  <!-- Bold Yellow Geometric K -->
-  <path d="M16 14V40" stroke="#E8A23D" stroke-width="5.5" stroke-linecap="round"/>
-  <path d="M16 27L33 14" stroke="#E8A23D" stroke-width="5.5" stroke-linecap="round"/>
-  <path d="M22 23L35 40" stroke="#E8A23D" stroke-width="5.5" stroke-linecap="round"/>
-  <!-- Interactive Cursor Arrow -->
-  <path d="M33 30L43 42L38 44L33 35L30 38V28L40 33L33 30Z" fill="#E8A23D" stroke="#14161C" stroke-width="1.2"/>
-  <!-- Wordmark 'klin' -->
-  <text x="62" y="34" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="28" letter-spacing="-0.5">k</text>
-  <text x="76" y="34" fill="#E8A23D" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="28" letter-spacing="-0.5">l</text>
-  <text x="83" y="34" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="28" letter-spacing="-0.5">in</text>
-  <!-- Dot on the i in yellow -->
-  <circle cx="91.5" cy="15" r="2.5" fill="#E8A23D" />
-  <!-- Subtitle Tagline -->
-  <text x="63" y="47" fill="#A0A5B5" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="6.5" letter-spacing="1.8">DRAG. DROP. BUILD.</text>
-</svg>
-`)}`;
+export const GLOBAL_LOGO_SRC = "/logo.png";
 
 // 2. GLOBAL LOGO METADATA
 export const GLOBAL_LOGO_CONFIG = {
