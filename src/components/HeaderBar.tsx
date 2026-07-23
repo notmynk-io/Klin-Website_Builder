@@ -70,7 +70,7 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({
   const activePage = pages.find((p) => p.id === activePageId) || pages[0];
 
   return (
-    <header className="h-[52px] bg-[#1B1E26] border-b border-[#2A2E39] flex items-center px-4 gap-5 text-[#E7E5E0] select-none z-30 shrink-0 font-sans">
+    <header className="h-[60px] bg-[#1B1E26] border-b border-[#2A2E39] flex items-center px-4 gap-5 text-[#E7E5E0] select-none z-30 shrink-0 font-sans">
       {/* Brand Logo & Breadcrumbs */}
       <div className="flex items-center gap-4">
       <div className="flex items-center gap-2 shrink-0 min-w-fit">
@@ -78,7 +78,7 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({
           src={GLOBAL_LOGO_SRC}
           alt={GLOBAL_LOGO_CONFIG.alt}
           title={GLOBAL_LOGO_CONFIG.title}
-          className="h-11 w-11 object-contain flex-shrink-0"
+          className="h-15 w-15 object-contain flex-shrink-0"
         />
       </div>
 
