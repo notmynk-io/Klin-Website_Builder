@@ -73,13 +73,14 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({
     <header className="h-[52px] bg-[#1B1E26] border-b border-[#2A2E39] flex items-center px-4 gap-5 text-[#E7E5E0] select-none z-30 shrink-0 font-sans">
       {/* Brand Logo & Breadcrumbs */}
       <div className="flex items-center gap-4">
-        <div className="flex items-center gap-2 font-display font-bold text-[15px] tracking-tight text-[#E7E5E0]">
-          <img
-            src={GLOBAL_LOGO_SRC}
-            alt="Klin"
-            className="h-8 w-8 object-contain flex-shrink-0"
-          />
-        </div>
+      <div className="flex items-center gap-2 shrink-0 min-w-fit">
+        <img
+          src={GLOBAL_LOGO_SRC}
+          alt={GLOBAL_LOGO_CONFIG.alt}
+          title={GLOBAL_LOGO_CONFIG.title}
+          className="h-8 w-8 object-contain flex-shrink-0"
+        />
+      </div>
 
         {/* Breadcrumb / Project & Page switch */}
         <div className="flex items-center gap-1.5 text-[12.5px] text-[#8B8F9B]">
@@ -176,9 +177,9 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({
         </button>
       </div>
 
-      {/* Kiln Dial Zoom Control */}
-      <div>
-        <div className="flex items-center gap-2 shrink-0 min-w-fit">
+    {/* Kiln Dial Zoom Control */}
+    <div>
+      <button
         onClick={() => {
           const zooms = [50, 75, 86, 100, 125];
           const currIdx = zooms.indexOf(zoom);
@@ -186,15 +187,21 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({
           onChangeZoom(nextZoom);
         }}
         title="Click to cycle Zoom"
+        className="flex items-center gap-2 shrink-0 min-w-fit cursor-pointer"
+      >
         <div
           className="w-6 h-6 rounded-full flex items-center justify-center relative shadow-inner"
           style={{
             background: `conic-gradient(#E8A23D 0deg ${Math.round((zoom / 100) * 250)}deg, #2A2E39 ${Math.round((zoom / 100) * 250)}deg 360deg)`,
           }}
         >
-          <div className="w-[16px] h-[16px] rounded-full bg-[#20232C]" />
-        </div>
-        <span className="text-[11.5px] text-[#8B8F9B] font-mono">{zoom}%</span>
+      <div className="w-[16px] h-[16px] rounded-full bg-[#20232C]" />
+      </div>
+
+          <span className="text-[11.5px] text-[#8B8F9B] font-mono">
+            {zoom}%
+          </span>
+        </button>
       </div>
 
       {/* Actions */}
