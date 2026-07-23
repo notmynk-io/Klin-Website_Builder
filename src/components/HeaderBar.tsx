@@ -177,7 +177,7 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({
       </div>
 
       {/* Kiln Dial Zoom Control */}
-      <div
+      <div>
         <div className="flex items-center gap-2 shrink-0 min-w-fit">
         onClick={() => {
           const zooms = [50, 75, 86, 100, 125];
@@ -186,7 +186,6 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({
           onChangeZoom(nextZoom);
         }}
         title="Click to cycle Zoom"
-      >
         <div
           className="w-6 h-6 rounded-full flex items-center justify-center relative shadow-inner"
           style={{
