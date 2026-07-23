@@ -78,7 +78,7 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({
           src={GLOBAL_LOGO_SRC}
           alt={GLOBAL_LOGO_CONFIG.alt}
           title={GLOBAL_LOGO_CONFIG.title}
-          className="h-8 w-8 object-contain flex-shrink-0"
+          className="h-11 w-11 object-contain flex-shrink-0"
         />
       </div>
 
