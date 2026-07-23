@@ -76,9 +76,8 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({
         <div className="flex items-center gap-2 font-display font-bold text-[15px] tracking-tight text-[#E7E5E0]">
           <img
             src={GLOBAL_LOGO_SRC}
-            alt={GLOBAL_LOGO_CONFIG.alt}
-            title={GLOBAL_LOGO_CONFIG.title}
-            className="h-8 w-auto object-contain cursor-pointer hover:opacity-95 transition"
+            alt="Klin"
+            className="h-8 w-8 object-contain flex-shrink-0"
           />
         </div>
 
