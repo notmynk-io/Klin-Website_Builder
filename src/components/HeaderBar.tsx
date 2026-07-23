@@ -179,7 +179,7 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({
 
       {/* Kiln Dial Zoom Control */}
       <div
-        className="flex items-center gap-2 bg-[#20232C] border border-[#2A2E39] rounded-full py-1 pr-2.5 pl-1 cursor-pointer"
+        <div className="flex items-center gap-2 shrink-0 min-w-fit">
         onClick={() => {
           const zooms = [50, 75, 86, 100, 125];
           const currIdx = zooms.indexOf(zoom);
